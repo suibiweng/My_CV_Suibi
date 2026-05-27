@@ -19,10 +19,12 @@
 
     html, body {
       margin: 0;
-      min-height: 100%;
+      width: 100%;
+      height: 100%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
+      overflow: hidden;
     }
 
     header {
@@ -63,8 +65,8 @@
     }
 
     main {
-      height: calc(100vh - 56px);
       width: 100%;
+      height: calc(100vh - 56px);
     }
 
     iframe {
@@ -94,19 +96,20 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Suibi Che-Chuan Weng - CV</h1>
     <div class="actions">
-      <a href="CV.pdf" target="_blank" rel="noopener">Open PDF</a>
+      <a href="CV.pdf#zoom=100" target="_blank" rel="noopener">Open PDF</a>
       <a href="CV.pdf" download>Download PDF</a>
     </div>
   </header>
 
   <main>
-    <iframe src="CV.pdf#view=FitH" title="Suibi Che-Chuan Weng CV PDF">
+    <iframe src="CV.pdf#zoom=100" title="Suibi Che-Chuan Weng CV PDF">
       <div class="fallback">
-        Your browser cannot display this PDF inline. <a href="CV.pdf">Open the PDF instead.</a>
+        Your browser cannot display this PDF inline. <a href="CV.pdf#zoom=100">Open the PDF instead.</a>
       </div>
     </iframe>
   </main>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suibi Che-Chuan Weng - CV</title>
+  <style>
+    :root {
+      --bg: #181818;
+      --panel: #242424;
+      --text: #f5f5f5;
+      --muted: #c8c8c8;
+      --accent: #8ab4f8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0 1rem;
+      background: var(--panel);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      height: calc(100vh - 56px);
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: white;
+    }
+
+    .fallback {
+      padding: 1rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      header {
+        height: auto;
+        min-height: 56px;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0.75rem 1rem;
+      }
+
+      main {
+        height: calc(100vh - 94px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Suibi Che-Chuan Weng - CV</h1>
+    <div class="actions">
+      <a href="CV.pdf" target="_blank" rel="noopener">Open PDF</a>
+      <a href="CV.pdf" download>Download PDF</a>
+    </div>
+  </header>
+
+  <main>
+    <iframe src="CV.pdf#view=FitH" title="Suibi Che-Chuan Weng CV PDF">
+      <div class="fallback">
+        Your browser cannot display this PDF inline. <a href="CV.pdf">Open the PDF instead.</a>
+      </div>
+    </iframe>
+  </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{hyperref}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{parskip}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+
+\begin{document}
+
+% ===== Header =====
+\begin{flushleft}
+\textbf{Suibi Che-Chuan Weng}\\
+Ph.D. Candidate, ATLAS Institute, University of Colorado Boulder (Target Graduation: Spring 2026; can accelerate)\\
+Advisor: Dr.\ Ellen Yi-Luen Do\\
+\href{mailto:suibi.weng@colorado.edu}{suibi.weng@colorado.edu} \quad $\cdot$ \quad (720)\,736-0476 \quad $\cdot$ \quad Portfolio: \href{https://suibi-studio.squarespace.com}{suibi-studio.squarespace.com}\\
+Editing Reality (video): \href{https://youtu.be/4-M-ZAreuOs}{youtu.be/4-M-ZAreuOs} \quad $\cdot$ \quad DreamMesh (video): \href{https://youtu.be/lrDvni_R0nw}{youtu.be/lrDvni_R0nw}
+\end{flushleft}
+
+\vspace{0.75em}
+
+\begin{letter}{Hiring Committee\\Microsoft Research Accelerator --- Creative Technology\\Microsoft}
+\date{September 8, 2025}
+\opening{Dear Hiring Committee,}
+
+Technology is my creative medium. As a Ph.D. candidate in Creative Technology \& Design, I build research-grade systems that turn generative AI and XR into \emph{reproducible, human-impact prototypes}---the very mission of Microsoft Creative Technology. I’m excited to contribute as an AI Engineer by architecting rigorous, end-to-end pipelines and expressive tools that help researchers and creators imagine, build, and share new experiences.
+
+In my research, I design and ship multimodal, real-time pipelines that blend \textbf{LLMs, diffusion models, retrieval, and XR}:
+\begin{itemize}
+  \item \textbf{Editing Reality} --- a Mixed Reality system that lets users modify the physical world with generative AI in real time, \emph{now being prepared for submission to IEEE VR 2026}. I engineered a modular backend (Flask + CUDA) orchestrating TEXTure, Shap-E/Real3D, and StreamDiffusion with Unity/Meta Quest front-ends, plus a “press-run-model” style JSON/Lua SDK that spawns interactive objects and particles with a single call.
+\item \textbf{DreamMesh} --- an \emph{early} Mixed Reality integration of a generative pipeline, \emph{accepted to AIxVR 2024}; it demonstrated prompt-to-asset creation in MR and feasibility of real-time model insertion.
+
+  \item \textbf{Dream Portal} --- a co-creative MR pipeline \emph{being prepared for submission to ACM IUI}, translating natural-language prompts into editable Lua behaviors via a \emph{RAG-style guides/contract} system.
+\end{itemize}
+
+These efforts map directly to your responsibilities: I’ve created \textbf{SDK-like abstractions} for generative components; built \textbf{interactive AI playgrounds} (notebooks + Unity dashboards) that expose model trade-offs; engineered \textbf{synthetic data/augmentation} paths; and optimized for \textbf{latency on edge devices} (Meta Quest) via async GPU pipelines, caching, and lightweight model variants.
+
+\textbf{Technical fit.}
+\begin{itemize}
+  \item \emph{Languages \& platforms:} Python (ML tooling/services), C\#, C/C++ (performance-critical), TypeScript (tools); Unity/URP, Photon.
+  \item \emph{AI/ML:} LLM-driven control (prompt templates + RAG), diffusion-based texturing/2D filters, 3D generation (Shap-E/Real3D), segmentation (SAM), evaluation harnesses for latency and user-perceived wait time.
+  \item \emph{Systems:} Containerized GPU services on on-prem RTX, reproducible Conda/Docker environments, experiment tracking and versioned assets; cloud-ready designs I’m eager to adapt to \textbf{AzureML workspaces}, managed GPU/TPU pools, and scalable data pipelines.
+  \item \emph{Creative tools \& XR:} Real-time graphics, MR interaction patterns, media/particle systems, and \textbf{human-centered control panels} that make complex AI instantly understandable.
+\end{itemize}
+
+Beyond code, I practice \textbf{hypothesis-driven research}: design-research workshops, measurable questions (e.g., perceived responsiveness, iteration cost), and documentation of reusable patterns for other developers. I care deeply about \textbf{responsible AI}---scoping capabilities, surfacing uncertainties in UI, and ensuring generated content remains \emph{editable, not final}, so humans stay in control.
+
+\textbf{Availability.} I am planning to graduate in \textbf{Spring 2026}; if mutually beneficial, I can \textbf{accelerate} my graduation timeline. I am also \textbf{open to an internship} in the interim while contributing to ongoing research and prototyping.
+
+Microsoft’s commitment to empowering creators resonates with me. I’d love to help your team prototype \emph{computer-use agents}, streamline \emph{RAG} for creative tooling, and push \emph{generative diffusion + XR} toward production-ready, inclusive experiences. I’m excited by opportunities to publish, open-source components where appropriate, and partner across research and product groups to transfer technology with polish.
+
+\closing{Warm regards,\\[0.5ex]\textbf{Suibi Che-Chuan Weng}\\ATLAS Institute, University of Colorado Boulder\\\href{mailto:suibi.weng@colorado.edu}{suibi.weng@colorado.edu} \quad $\cdot$ \quad (720)\,736-0476 \quad $\cdot$ \quad \href{https://suibi-studio.squarespace.com}{suibi-studio.squarespace.com}}
+
+\end{letter}
+
+\end{document}
